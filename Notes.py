@@ -16,7 +16,7 @@ car_type = "BMW"
 car_cylinder = 8
 car_mpg = 5000.9
 
-print( "I have a car called %s. its a pretty nice." % (car_name)) # watch the order
+print("I have a car called %s. its a pretty nice." % (car_name)) # watch the order
 
 # here is where we get a little fancy
 print("What is your name?")
@@ -26,3 +26,4 @@ print("Hello %s." % name)
 age = input("How old are you?")
 print("%s?! That's really old. You belong in a retirement Home")
 
+print("Your rude!")
