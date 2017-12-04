@@ -87,4 +87,41 @@ def grade_calc(percentage):
 print(grade_calc(100))
 
 
+def happy_bday(name):
+    print("Happy birthday to you")
+    print("Happy birthday to you")
+    print("Happy birthday dear " + name)
+    print("Happy birthday to you")
 
+
+happy_bday("Samuel")
+
+# loops
+
+for num in range(10):
+    print(num + 1)
+# While loops (BEWARE!!!!!)
+
+a =1
+while a < 10: # This is the condition,
+               # it must be true to execute
+    print(a)
+    a += 1 # This iterates so that we can break the loop
+
+# Random Numbers
+
+import random # This should be on line 1
+print(random.randint(0,1000))
+
+#RECASTING
+c = '1'
+print(c == 1)
+print(c == 1) # we have a string amd an integer
+print(int(c) == 1)
+print(c == str(1))
+
+# COMPARISON
+
+print(1 == 1) # use a double equal sign
+print(1 !=2) #  1 is not equal to 2
+print(not False)
