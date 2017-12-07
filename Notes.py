@@ -103,7 +103,7 @@ for num in range(10):
 # While loops (BEWARE!!!!!)
 
 a =1
-while a < 10: # This is the condition,
+while a < 10:# This is the condition,
                # it must be true to execute
     print(a)
     a += 1 # This iterates so that we can break the loop
@@ -125,3 +125,49 @@ print(c == str(1))
 print(1 == 1) # use a double equal sign
 print(1 !=2) #  1 is not equal to 2
 print(not False)
+
+
+
+
+
+
+import random
+n = random.randint(0, 50)
+print(n)
+print("what is your guess")
+guess = input (">_")
+if n == guess:
+    print("You win")
+
+
+print(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import random
+n = random.randint(1, 50)
+guess = int(input("Enter a number from 1 to 50: "))
+while n = "guess":
+    print
+    if guess < n:
+        print("guess is low")
+        guess = int(input("Enter a number from 1 to 50: "))
+    elif guess > n:
+        print("guess is high")
+        guess = int(input("Enter a number from 1 to 50: "))
+    else:
+        print("you guessed it!")
+        break
+        print
+

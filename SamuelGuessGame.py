@@ -1,13 +1,6 @@
-import random
-n = random.randint(0, 50)
-print(n)
-print("what is your guess")
-guess = input (">_")
-
-if n == guess:
-    print("You win")
-
-print(n == str(5))
 
 
+
+print("You guessed it!!, the number is", the_number, "and it only"\
+       " took you", count , "tries")
 
