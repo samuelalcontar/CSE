@@ -1,4 +1,4 @@
-# print("Hello world")
+'''# print("Hello world")
 # # Samuel Alcontar
 # A = 4
 # B=3
@@ -116,7 +116,7 @@ print(random.randint(0,1000))
 #RECASTING
 c = '1'
 print(c == 1)
-print(c == 1) # we have a string amd an integer
+print(c == 1) # we have a string and an integer
 print(int(c) == 1)
 print(c == str(1))
 
@@ -125,5 +125,40 @@ print(c == str(1))
 print(1 == 1) # use a double equal sign
 print(1 !=2) #  1 is not equal to 2
 print(not False)
+'''
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Lists
+
+the_count = [1 , 2, 3, 4, 5]
+cheeseburger_ingredients = ["cheese", "beef", "sauce", "sesame seed bun", "avocado", "onions"]
+print(cheeseburger_ingredients[3])
+print (len(cheeseburger_ingredients))
+print(len(the_count))
+# going through lists
+for things in cheeseburger_ingredients:
+    print(things)
+
+for numbers in the_count:
+    print(numbers * 2)
+
+length = len(cheeseburger_ingredients)
+range(5) # A list of number 0 through 4
+range(len(cheeseburger_ingredients)) # generates a list of all indices
+
+for numbers in range(len(cheeseburger_ingredients)):
+    item = cheeseburger_ingredients[numbers]
+    print("The item at index %d is %s" % (numbers, item))
