@@ -1,35 +1,36 @@
 import random
-"""
-This is a guide of how to make hangman
-1. Make a word bank - 10 items
-2. select a random item to guess
-3. take in a letter and add list if letters guessed
-4. Hide and reveal letter
-5. Create a win and lose condition
-"""
 
-Word_bank = ["redbaby", "mcdonalds", "edison", "gaston", "addams", "antidisestablishmentarianism " ,
-             "san fransisco 49ers", "do you know da wae", "atlanta falcons", "raiders are haters" ]
-import string
-print(string.ascii_letters)
-print(string.ascii_lowercase)
-print(string.punctuation)
-
+Word_bank = ["redbaby", "mcdonalds", "edison", "gaston", "addams", "CONTROL Z",
+             "san fransisco 49ers", "do you know da wae", "atlanta falcons", "raiders are haters"]
 length = len(Word_bank)
 range(11)
 range(len(Word_bank))
 
 randomWords = random.choice(Word_bank)
+Guesses_left = 10
+letters_guessed = [' ']
+user_input = ""
+win = False
+print("You have 10 guesses to win")
+while Guesses_left > 0 and not win:  # while user_input != "quit":
+    output = []
+    for letter in randomWords:
+        if letter in letters_guessed:
+            output.append(letter)
+        else:
+            output.append("*")
+    print(output)
+    print(Guesses_left)
 
-user_input = input("Type in a letter: ")
+    if output == list(randomWords):
+        print("You win")
+        win = True
+        continue
 
+    user_input = input("Type in a letter: ")
+    letters_guessed.append(user_input)
+    print(letters_guessed)
 
-user_input = ()
-listOne = user_input
-print(listOne)
-print(listOne)
-letters_guessed = [user_input]
-print(letters_guessed)
-
-
-
+    if user_input not in list(randomWords):
+        print("Guess again")
+        Guesses_left -= 1
