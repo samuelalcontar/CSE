@@ -63,3 +63,6 @@ largest_dictionary = {
         ]
     }
 }
+current_node = largest_dictionary["CA"]
+print(current_node["BORDER ST"][1])
+
