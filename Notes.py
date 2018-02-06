@@ -143,7 +143,7 @@ print(not False)
 
 #Lists
 
-the_count = [1 , 2, 3, 4, 5]
+# the_count = [1 , 2, 3, 4, 5]
 cheeseburger_ingredients = ["cheese", "beef", "sauce", "sesame seed bun", "avocado", "onions"]
 print(cheeseburger_ingredients[3])
 print (len(cheeseburger_ingredients))
@@ -192,3 +192,5 @@ print(lowercase)
 
 L1 = ["H", "e", "l", "l", "o"]
 "". join(L1)
+
+

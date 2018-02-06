@@ -12,6 +12,7 @@ letters_guessed = [' ']
 user_input = ""
 win = False
 print("You have 10 guesses to win")
+
 while Guesses_left > 0 and not win:  # while user_input != "quit":
     output = []
     for letter in randomWords:
