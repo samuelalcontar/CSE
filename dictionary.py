@@ -10,14 +10,15 @@ dictionary["profession"] = "telemarketer"
 
 
 large_dictionary = {
-    "CA":"California",
+    "CA": "California",
     "AZ": "Arizona",
     "NY": "New York"
 }
+
 print(large_dictionary["NY"])
 
 larger_dictionary = {
-    "CA":["Fresno",
+    "CA": ["Fresno",
           "san francisco",
           "san jose"],
     "AZ":["phoenix",
@@ -51,7 +52,7 @@ largest_dictionary = {
             "New Mexico"
         ]
     },
-    "NY":{
+    "NY": {
         'Name': "New York",
         'Population': 19750000,
         'BORDER ST': [
@@ -63,6 +64,7 @@ largest_dictionary = {
         ]
     }
 }
-current_node = largest_dictionary["CA"]
-print(current_node["BORDER ST"][1])
+current_node = largest_dictionary["NY"]
+print(current_node["Name"])
+print(current_node["Population"])
 
