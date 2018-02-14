@@ -75,6 +75,28 @@ world_map = {
     'WATERFALLS': {
         'NAME': 'Waterfalls',
         'DESCRIPTION': 'The magical falls will make you stay young forever.There is so much good meat and fruit but who'
-                       ' left it here?.If you feel unsafe and you wanna leave go to the South,East,or West.'
+                       ' left it here?.If you feel unsafe and you wanna leave go to the South,East,or West.',
+        'PATHS': {
+            'South': 'UNDERWATER_WORLD',
+        }
     }
  }
+
+current_node = world_map['HOUSE']
+directions = ['NORTH', 'EAST', 'SOUTH', 'WEST']
+
+while True:
+
+    print(current_node['NAME'])
+    print(current_node['DESCRIPTION'])
+    command = input('>_')
+    if command == 'quit':
+        quit(0)
+    if command in directions:
+        try:
+            name_of_node = current_node['PATHS'][command]
+            current_node = world_map[name_of_node]
+        except KeyError:
+            print('You can not go this way')
+    else:
+        print('Command not recognized')
