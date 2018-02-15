@@ -78,7 +78,58 @@ world_map = {
                        ' left it here?.If you feel unsafe and you wanna leave go to the South,East,or West.',
         'PATHS': {
             'South': 'UNDERWATER_WORLD',
+            'EAST': "TRAIL",
+            'WEST': 'ABANDONED_STORE'
         }
+    },
+    'UNDERWATER_WORLD': {
+        'NAME': 'OCEAN',
+        'DESCRIPTION': 'This is where the Watergod lives.He may be your friend for this adventure and he may not '
+                       'SO BE CAREFUL. You can go to the EAST and NORTH',
+        'PATHS': {
+            'EAST': "NOT_SO_MAGICAL_CLIFF",
+            'NORTH': 'WATERFALLS'
+        }
+    },
+    'ABANDONED_STORE': {
+        'NAME': 'Store',
+        'DESCRIPTION': 'You can geet stuff for free form here but there is alwasy shoplifters.How the store gets'
+                       ' restocked nobody nows.There is alout of thiefs and cime around here. '
+                       'The exits are to EAST,SOUTH,and WEST.',
+        'PATHS': {
+            'EAST': 'WATERFALLS',
+            'SOUTH': 'DEATH_DUNGEON',
+            'WEST': 'GANG_ALLEY '
+        }
+    },
+    'NOT_SO_MAGICAL_CLIFF': {
+        'NAME': 'Deadly_cliff',
+        'DESCRIPTION': "If you dont watch your step you may die.This cliff has a bunch of weapons laying around."
+                       "You can go to  the SOUTH or WEST.",
+        'PATHS': {
+            'SOUTH': 'YOU FELL OFF THE CLIFF',
+            'WEST': 'UNDERWATER_WORLD'
+        }
+    },
+    'YOU FELL OFF THE CLIFF': {
+        'NAME': 'DEATH',
+        'DESCRIPTION': 'YOU HAVE FALLEN OFF NOT_SO_MAGICAL_CLIFF. IF YOU WISH TO CONITINUE THIS GAME AND NOT FALL OF'
+                       ' THIS CLIFF PRESS REFRESH. THE NEXT TIME YOU PLAY THIS GAME DONT FALL TO YOUR DEATH.AND BTW'
+                       ' I AM YOUR CONSCIOUS TELLING YOU TO BE SMART.',
+        'PATHS': {
+            'NONE'
+        }
+    },
+    'DEATH_DUNGEON': {
+        'NAME': 'DUNGEON',
+        'DESCRIPTION': 'This dungeon has a whole lot of dead people. The butcher sees you and starts comming towards '
+                       'you. you look around and see the only exit is back behind you(NORTH).',
+        'PATHS': {
+            'NORTH': 'ABANDONED STORE'
+        }
+    },
+    'GANG_ALLEY':{
+        
     }
  }
 
