@@ -16,7 +16,7 @@ world_map = {
             'SOUTH': 'SHED'
         }
     },
-    'JAIL': {
+    'JAILHOUSE': {
         'NAME': "Jailhouse",
         'DESCRIPTION': "You see a bunch of delinquents.They are armed.The exits are to East,South,and North",
         'PATHS': {
@@ -55,11 +55,11 @@ world_map = {
     },
     'FOREST': {
         'NAME': 'Forest',
-        'DESCRIPTION': 'This forest is enchanted you will run into alot of people out of the ordinary.This forest also '
-                       'holds the tallest trees known to man.If you want to leave this glorious place go to the'
+        'DESCRIPTION': 'This forest is enchanted you will run into allot of people out of the ordinary.This forest '
+                       'also holds the tallest trees known to man.If you want to leave this glorious place go to the'
                        ' South or West',
         'PATHS': {
-            'SOUTH': 'Trail_of_Roots',
+            'SOUTH': 'Trail',
             'WEST': 'Yard'
         }
     },
@@ -128,13 +128,23 @@ world_map = {
             'NORTH': 'ABANDONED STORE'
         }
     },
-    'GANG_ALLEY':{
-        
+    'BASEMENT': {
+        'NAME': 'BASEMENT',
+        'DESCRIPTION': 'its pretty scary down here.You can only go back the way you came.you can only go EAST.',
+        'PATHS': {
+            'EAST': 'SHED'
+        }
+    },
+    'DEATH': {
+        'NAME': 'DEATH',
+        'DESCRIPTION': 'If you wanna get out of death then you should not have died.REFRESH TO PLAY AGAIN',
+        'PATHS': 'NONE'
     }
  }
 
 current_node = world_map['HOUSE']
 directions = ['NORTH', 'EAST', 'SOUTH', 'WEST']
+
 
 while True:
 
@@ -143,7 +153,9 @@ while True:
     command = input('>_')
     if command == 'quit':
         quit(0)
-    if command in directions:
+    if command == 'JUMP':
+            print('WOO')
+    elif command in directions:
         try:
             name_of_node = current_node['PATHS'][command]
             current_node = world_map[name_of_node]
