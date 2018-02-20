@@ -147,7 +147,6 @@ directions = ['NORTH', 'EAST', 'SOUTH', 'WEST']
 
 
 while True:
-
     print(current_node['NAME'])
     print(current_node['DESCRIPTION'])
     command = input('>_')

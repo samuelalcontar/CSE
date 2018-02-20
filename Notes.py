@@ -126,23 +126,7 @@ print(1 == 1) # use a double equal sign
 print(1 !=2) #  1 is not equal to 2
 print(not False)
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Lists
-
 # the_count = [1 , 2, 3, 4, 5]
 cheeseburger_ingredients = ["cheese", "beef", "sauce", "sesame seed bun", "avocado", "onions"]
 print(cheeseburger_ingredients[3])
@@ -151,7 +135,7 @@ print(len(the_count))
 # going through lists
 for things in cheeseburger_ingredients:
     print(things)
-
+'''
 for numbers in the_count:
     print(numbers * 2)
 
@@ -192,5 +176,4 @@ print(lowercase)
 
 L1 = ["H", "e", "l", "l", "o"]
 "". join(L1)
-
-
+'''
